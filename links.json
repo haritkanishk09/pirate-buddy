@@ -3,22 +3,16 @@
     "title": "Magnet Search",
     "url": "#",
     "category": "Torrents",
-    "icon": "🧲",
-    "desc": "Global magnet link search engine."
+    "icon": "magnet",
+    "color": "--c-torrents",
+    "desc": "Global magnet search engine"
   },
   {
     "title": "StreamHaven",
     "url": "#",
     "category": "Streaming",
-    "icon": "🎬",
-    "desc": "Movies and TV shows index."
-  },
-  {
-    "title": "Manga Reader",
-    "url": "#",
-    "category": "Reading",
-    "icon": "📖",
-    "desc": "Read latest chapters online."
+    "icon": "tv",
+    "color": "--c-streaming",
+    "desc": "Movies & TV shows"
   }
 ]
-
