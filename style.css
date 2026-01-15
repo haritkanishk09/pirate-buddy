@@ -1,1 +1,153 @@
+:root {
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --accent: #f59e0b;
+  --text-main: #e2e8f0;
+  --text-dim: #94a3b8;
+  --hover-color: #334155;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--text-main);
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+#search-input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  border: 2px solid var(--card-bg);
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.controls-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.categories {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.control-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.control-btn.active,
+.control-btn:hover {
+  background-color: var(--accent);
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+.view-toggle {
+  display: flex;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.link-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem 1rem 3rem;
+}
+
+.link-container.list-mode {
+  grid-template-columns: 1fr;
+  max-width: 900px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: var(--hover-color);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.tag {
+  font-size: 0.75rem;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+footer {
+  margin-top: auto;
+  padding: 2rem;
+  color: var(--text-dim);
+}
 
